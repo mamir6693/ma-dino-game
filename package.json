@@ -1,7 +1,11 @@
 {
-  "name": "dino-game",
-  "version": "0.1.0",
-  "private": true,
+  "name": "ma-dino-game",
+  "version": "0.1.2",
+  "description": "Dino Game",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "license": "MIT",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -22,6 +26,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts-ts": "latest"
   },
   "eslintConfig": {
     "extends": [
