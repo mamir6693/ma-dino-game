@@ -2,7 +2,7 @@
 
 Simple Dino Game
 
-![Gameplay](public/gameplay.png)
+![Gameplay](https://raw.githubusercontent.com/mamir6693/ma-dino-game/refs/heads/master/public/gameplay.png)
 
 ### Installation
 
