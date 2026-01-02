@@ -1,11 +1,13 @@
 {
   "name": "ma-dino-game",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Dino Game",
   "main": "build/index.js",
   "module": "build/index.js",
   "types": "build/index.d.ts",
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "license": "MIT",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
