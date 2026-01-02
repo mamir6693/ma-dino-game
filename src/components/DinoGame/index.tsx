@@ -115,6 +115,7 @@ const DinoGameInternal = () => {
         <img
           style={{ width: '100%' }}
           src="https://img.itch.zone/aW1hZ2UvNTA5MzIwLzI2NDIzNTEucG5n/347x500/kwmG6Z.png"
+          alt="Dino character"
         />
       </div>
 
@@ -122,6 +123,7 @@ const DinoGameInternal = () => {
         <img
           style={{ width: '100%' }}
           src="https://img.itch.zone/aW1hZ2UvNTA5MzIwLzI2NDIzNTcucG5n/347x500/%2FqbQKf.png"
+          alt="Cactus obstacle"
         />
       </div>
       <div className="score">Score: {score}</div>

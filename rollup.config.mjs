@@ -31,7 +31,9 @@ export default {
       tsconfig: './tsconfig.json',
       declaration: true,
       declarationDir: 'build',
-      outDir: 'build'
+      outDir: 'build',
+      include: ['src/components/**/*'],
+      exclude: ['src/lib.tsx', '**/*.test.tsx', '**/*.test.ts']
     }),
     postcss({
       inject: true, // Inject CSS into JS instead of extracting

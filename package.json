@@ -1,7 +1,22 @@
 {
   "name": "ma-dino-game",
   "version": "0.3.0",
-  "description": "Dino Game",
+  "description": "A simple, animated dino game.",
+  "keywords": [
+    "react",
+    "game",
+    "dino",
+    "dinosaur"
+  ],
+  "author": "Muhammad Amir",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mamir6693/ma-dino-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mamir6693/ma-dino-game/issues"
+  },
+  "homepage": "https://github.com/mamir6693/ma-dino-game#readme",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "types": "build/index.d.ts",
