@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./build",
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": false,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/lib.tsx",
+    "src/components/**/*"
+  ],
+  "exclude": [
+    "src/**/*.test.tsx",
+    "src/**/*.test.ts",
+    "src/setupTests.ts",
+    "src/reportWebVitals.ts",
+    "src/App.tsx",
+    "src/App.test.tsx",
+    "src/index.tsx"
+  ]
+}

@@ -1,7 +1,10 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import './dino.css';
 
-const DinoGame = () => {
+const DinoGameInternal = () => {
+  const [mounted, setMounted] = useState(false);
   const dinoRef = useRef<HTMLDivElement>(null);
   const cactusRef = useRef<HTMLDivElement>(null);
   const [score, setScore] = useState(0);
@@ -33,8 +36,10 @@ const DinoGame = () => {
     }, 20);
   };
 
-  // Key listener
+  // Handle mounting and key listener
   useEffect(() => {
+    setMounted(true);
+
     const handleKey = (e: KeyboardEvent) => {
       if (e.code === 'Space' || e.code === 'ArrowUp') jump();
     };
@@ -64,6 +69,10 @@ const DinoGame = () => {
     }, 100);
     return () => clearInterval(interval);
   }, [gameOver, score]);
+
+  if (!mounted) {
+    return <div className="game" style={{ visibility: 'hidden' }} />;
+  }
 
   return (
     <div className="game">
@@ -120,4 +129,4 @@ const DinoGame = () => {
   );
 };
 
-export default DinoGame;
+export default DinoGameInternal;
